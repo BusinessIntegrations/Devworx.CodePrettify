@@ -1,3 +1,6 @@
+The public/BI branch contains code modified by Business Integrations.
+See the wiki for this repo for further info. (https://github.com/BusinessIntegrations/Devworx.CodePrettify/wiki)
+
 Orchard Code Prettify Module
 ============================
 
