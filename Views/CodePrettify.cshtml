@@ -3,7 +3,6 @@
         // added using the filter
         return;
     }
-
     var themeName = (string) Model.ThemeName;
     string themeResource;
     if (!string.IsNullOrWhiteSpace(themeName)) {
@@ -12,11 +11,12 @@
     else {
         themeResource = "prettify-default";
     }
-
-    Style.Require(themeResource).AtHead();
-
-    Script.Require("prettify-js").AtFoot();
-    Script.Require("jQuery").AtFoot();
+    Style.Require(themeResource)
+        .AtHead();
+    Script.Require("prettify-js")
+        .AtFoot();
+    Script.Require("jQuery")
+        .AtFoot();
 }
 @using (Script.Foot()) {
     <script type="text/javascript">

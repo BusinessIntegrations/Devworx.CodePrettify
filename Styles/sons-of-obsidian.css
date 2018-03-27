@@ -27,7 +27,7 @@
 
 .dec { color: purple; }
 
-pre.prettyprint { border: 0px solid #888; }
+pre.prettyprint { border: 0 solid #888; }
 
 ol.linenums {
     margin-bottom: 0;

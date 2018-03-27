@@ -80,7 +80,7 @@ ol.linenums {
     margin-top: 0;
 }
 
-/* IE indents via margin-left */
+/* IE indents via margin-left 
 
 li.L0,
 li.L1,
@@ -91,12 +91,11 @@ li.L5,
 li.L6,
 li.L7,
 li.L8,
-li.L9 { /* */ }
+li.L9 { } */
 
-/* Alternate shading for lines */
-
+/* Alternate shading for lines 
 li.L1,
 li.L3,
 li.L5,
 li.L7,
-li.L9 { /* */ }
+li.L9 { } */

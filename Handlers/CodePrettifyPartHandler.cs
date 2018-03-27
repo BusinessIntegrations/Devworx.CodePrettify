@@ -1,5 +1,7 @@
-﻿using Devworx.CodePrettify.Models;
+﻿#region Using
+using Devworx.CodePrettify.Models;
 using Orchard.ContentManagement.Handlers;
+#endregion
 
 namespace Devworx.CodePrettify.Handlers {
     public class CodePrettifyPartHandler : ContentHandler {

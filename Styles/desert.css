@@ -5,7 +5,7 @@ pre.prettify {
 }
 
 pre .nocode {
-    background-color: none;
+    background-color: transparent;
     color: #000
 }
 
@@ -72,12 +72,12 @@ ol.linenums {
 
 li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 { list-style-type: none }
 
-/* Alternate shading for lines */
+/* Alternate shading for lines 
 
-li.L1, li.L3, li.L5, li.L7, li.L9 { }
+li.L1, li.L3, li.L5, li.L7, li.L9 { } */
 
 @media print {
-    pre.prettify { background-color: none }
+    pre.prettify { background-color: transparent }
 
     pre .str, code .str { color: #060 }
 

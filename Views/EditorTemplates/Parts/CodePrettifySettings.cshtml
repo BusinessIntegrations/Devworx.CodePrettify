@@ -1,5 +1,4 @@
 ﻿@model Devworx.CodePrettify.ViewModels.CodePrettifySettingsViewModel
-
 <fieldset>
     <legend>@T("Code Prettify")</legend>
     <div>
@@ -9,7 +8,11 @@
     </div>
     <div>
         <label for="CodePrettifySettings_Theme">@T("Theme")</label>
-        @Html.DropDownList("Theme", new[] {new SelectListItem {Text = T("").Text, Value = ""}}.Union(new SelectList(Model.Themes, "", "", Model.PrettifySettingsPart.Theme)))
+        @Html.DropDownList("Theme", new[] {new SelectListItem {
+            Text = T("")
+                .Text,
+            Value = ""
+        }}.Union(new SelectList(Model.Themes, "", "", Model.PrettifySettingsPart.Theme)))
         @Html.ValidationMessage("Theme", "*")
     </div>
 </fieldset>
