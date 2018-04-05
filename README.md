@@ -1,5 +1,8 @@
-The BI/public branch contains code modified by Business Integrations.
-See the wiki for this repo for further info. (https://github.com/BusinessIntegrations/Devworx.CodePrettify/wiki)
+The **BI/public** branch in this fork of this code is managed by [Business Integrations Ltd](https://github.com/BusinessIntegrations).
+
+A changelog is appended at the end of this file. Further information on our coding standards and approach are detailed [here](https://businessintegrations.github.io/).
+
+***
 
 Orchard Code Prettify Module
 ============================
@@ -8,3 +11,12 @@ Provides code prettify support for formatting code in blog posts. (See: https://
 * Leverages the Infoset feature of Orchard 1.8
 * Enabled CDN Support using cdnjs: http://cdnjs.com/libraries/prettify
 * Configured minified and non-minified css and js resources
+
+***
+
+## Business Integrations Changelog
+
+1. Initial Module rework (Public release 1A & 1B)
+   * Invalid hex fixed
+   * Code tidy
+   * Update readme.md
