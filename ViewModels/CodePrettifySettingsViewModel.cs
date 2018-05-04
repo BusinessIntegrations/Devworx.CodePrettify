@@ -4,9 +4,13 @@ using Devworx.CodePrettify.Models;
 #endregion
 
 namespace Devworx.CodePrettify.ViewModels {
-    public class CodePrettifySettingsViewModel {
+    public class CodePrettifySettingsViewModel : ICodePrettifySettingsPart {
+        #region ICodePrettifySettingsPart Members
+        public string Theme { get; set; }
+        public bool UseAutoLoader { get; set; }
+        #endregion
+
         #region Properties
-        public CodePrettifySettingsPart PrettifySettingsPart { get; set; }
         public IEnumerable<string> Themes { get; set; }
         #endregion
     }

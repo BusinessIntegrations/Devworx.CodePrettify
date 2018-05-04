@@ -11,14 +11,14 @@ namespace Devworx.CodePrettify {
             //Styles
             manifest.DefineStyle("prettify-default")
                 .SetUrl("prettify.min.css", "prettify.css")
-                .SetCdn("https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css");
+                .SetCdn($"{Constants.MasterLoader}prettify.css");
             manifest.DefineStyle("prettify-desert")
                 .SetUrl("desert.min.css", "desert.css")
-                .SetCdn("https://cdn.rawgit.com/google/code-prettify/master/loader/skins/desert.css")
+                .SetCdn($"{Constants.MasterLoader}/skins/desert.css")
                 .SetVersion("1.298");
             manifest.DefineStyle("prettify-desert")
                 .SetUrl("doxy.min.css", "doxy.css")
-                .SetCdn("https://cdn.rawgit.com/google/code-prettify/master/loader/skins/doxy.css")
+                .SetCdn($"{Constants.MasterLoader}/skins/doxy.css")
                 .SetVersion("1.298");
             manifest.DefineStyle("prettify-github")
                 .SetUrl("github.min.css", "github.css")
@@ -31,11 +31,11 @@ namespace Devworx.CodePrettify {
                 .SetVersion("1.0");
             manifest.DefineStyle("prettify-sons-of-obsidian")
                 .SetUrl("sons-of-obsidian.min.css", "sons-of-obsidian.css")
-                .SetCdn("https://cdn.rawgit.com/google/code-prettify/master/loader/skins/sons-of-obsidian.css")
+                .SetCdn($"{Constants.MasterLoader}/skins/sons-of-obsidian.css")
                 .SetVersion("1.0");
             manifest.DefineStyle("prettify-sunburst")
                 .SetUrl("sunburst.min.css", "sunburst.css")
-                .SetCdn("https://cdn.rawgit.com/google/code-prettify/master/loader/skins/sunburst.css")
+                .SetCdn($"{Constants.MasterLoader}/skins/sunburst.css")
                 .SetVersion("1.0");
             manifest.DefineStyle("prettify-tomorrow-night-blue")
                 .SetUrl("tomorrow-night-blue.min.css", "tomorrow-night-blue.css")
@@ -59,7 +59,7 @@ namespace Devworx.CodePrettify {
             // Scripts
             manifest.DefineScript("prettify-js")
                 .SetUrl("prettify.js")
-                .SetCdn("https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js");
+                .SetCdn(Constants.CdnRawgitComPrettifyJs);
         }
         #endregion
     }

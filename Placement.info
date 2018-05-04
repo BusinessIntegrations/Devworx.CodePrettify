@@ -2,6 +2,4 @@
   <Match ContentType="BlogPost">
     <Place CodePrettify="Content:1.1" />
   </Match>
-
-  <Place Parts_CodePrettifySettings_Edit="Content:10" />
 </Placement>

@@ -207,13 +207,25 @@
       <Name>Orchard.Framework</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Orchard.Layouts\Orchard.Layouts.csproj">
+      <Project>{6BD8B2FA-F2E3-4AC8-A4C3-2925A653889A}</Project>
+      <Name>Orchard.Layouts</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Drivers\CodePrettifyPartDriver.cs" />
-    <Compile Include="Drivers\CodePrettifySettingsPartDriver.cs" />
     <Compile Include="Filters\ScriptInjectingFilter.cs" />
     <Compile Include="Handlers\CodePrettifyPartHandler.cs" />
     <Compile Include="Handlers\CodePrettifySettingsPartHandler.cs" />
+    <Compile Include="Models\ICodePrettifySettingsPart.cs" />
+    <Compile Include="Permissions.cs" />
+    <Compile Include="Services\CacheModel.cs" />
+    <Compile Include="Services\ICacheModel.cs" />
+    <Compile Include="Services\ICacheService.cs" />
+    <Compile Include="Services\CacheService.cs" />
     <Compile Include="ViewModels\CodePrettifySettingsViewModel.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Models\CodePrettifyPart.cs" />
@@ -223,7 +235,7 @@
     <Content Include="Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\EditorTemplates\Parts\CodePrettifySettings.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\CodePrettify.cshtml" />
   </ItemGroup>
   <ItemGroup>
